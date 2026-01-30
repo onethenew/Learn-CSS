@@ -54,3 +54,22 @@ section *{
   border-radius: 10px ;
 
 }
+
+aside *{
+  align-content: center;
+ 
+  
+}
+aside {
+  border: 5px solid rgba(95, 158, 160, 0.651);
+  border-radius: 10px;
+  background-color: rgb(0, 59, 40);
+}
+
+aside:hover{
+  background-color: rgba(0, 247, 255, 0.582);
+}
+li:hover{
+  font-size: 20px;
+}
+
