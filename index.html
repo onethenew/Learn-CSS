@@ -1,24 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=".\src\style.css">
-    <title>prectice-css</title>
-  </head>
-  <body>
-      <header>
-      <nav>
-        <ul>
-          <li class="item">Home</li>
-          <li class="item">About</li>
-          <li class="item">Contect</li>
-          <li class="item">See Images</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS & Semantic HTML Topics</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+   <header>
+    <h1>CSS & Semantic HTML Study Page</h1>
+    <nav class="border">
+      <ul class="border">
+        <li>Box Model</li>
+        <li>Positioning</li>
+        <li>Pseudo-elements</li>
+        <li>Semantic HTML</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>CSS Box Model</h2>
+
+      <article>
+        <h3>Content-Box</h3>
+        <p>Width/height includes only content. Padding and border are added outside.</p>
+      </article>
+
+      <article>
+        <h3>Border-Box</h3>
+        <p>Width/height includes content + padding + border, making sizing easier.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>CSS Positioning</h2>
+
+      <article>
+        <h3>Static</h3>
+        <p>Default. Follows normal flow.</p>
+      </article>
+
+      <article>
+        <h3>Relative</h3>
+        <p>Positioned relative to its normal position.</p>
+      </article>
+
+      <article>
+        <h3>Absolute</h3>
+        <p>Removed from normal flow, positioned relative to nearest ancestor.</p>
+      </article>
+
+      <article>
+        <h3>Fixed</h3>
+        <p>Stays fixed relative to viewport.</p>
+      </article>
+
+      <article>
+        <h3>Sticky</h3>
+        <p>Acts like relative until scroll reaches a threshold, then behaves like fixed.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Pseudo-elements</h2>
+
+      <article>
+        <h3>::before</h3>
+        <p>Inserts content before element. Example: used for article markers.</p>
+      </article>
+
+      <article>
+        <h3>::after</h3>
+        <p>Inserts content after element.</p>
+      </article>
+
+      <article>
+        <h3>::first-letter & ::first-line</h3>
+        <p>Style first letter or first line of text.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Semantic HTML</h2>
+
+      <article class="set">
+        <p>Use meaningful tags to define content structure:</p><br>
+        <ul class="ul">
+          <li>&lt;header&gt; - Top section</li>
+          <li>&lt;nav&gt; - Navigation links</li>
+          <li>&lt;main&gt; - Main content</li>
+          <li>&lt;section&gt; - Group of content</li>
+          <li>&lt;article&gt; - Independent content</li>
+          <li>&lt;aside&gt; - Related content / sidebar</li>
+          <li>&lt;footer&gt; - Footer</li>
         </ul>
-      </nav>
-      <H2>Home</H2>
-      <section>This is section</section>
-      </header>
-  </body>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Next Topics</h3>
+      <p>Flexbox, CSS Grid, Responsive Design, JavaScript basics.</p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>© 2026 CSS & Semantic HTML Study Page</p>
+  </footer>
+</body>
 </html>
